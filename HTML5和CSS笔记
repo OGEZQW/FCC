@@ -8,8 +8,6 @@ HTML:Hyper Text Markup Language(超文本标记语言)
 
 注释：<！--  -->
 
-占位符：如开始标记和结束标记之间的文字
-
 改变文本颜色：
   内联样式（最简单有效）
     <h2 style="coor:blue">CatPhotoApp</h2>
@@ -111,3 +109,12 @@ alt属性(alt text)
     <li>Garfield</li>
     <li>Sylvester</li>
   </ol>
+
+表单
+
+ 文本输入框（Text input）
+   <input type="text">
+   
+ 占位符（placeholder text）:输入框在输入前置于框中的预定义文本
+   <input type="text" placeholder="this is placeholder text">
+   
