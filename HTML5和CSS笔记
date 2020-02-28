@@ -72,7 +72,7 @@ HTML:Hyper Text Markup Language(超文本标记语言)
   <img class="smaller-image thin-red-border"
    src="/images/relaxing-cat.jpg">
  
- 边框变圆
+边框变圆
    通过CSS的一个叫border-radius(边框半径)的属性来让它的边框变成圆的。
    .thick-green-border {
      border-color: green;
@@ -81,10 +81,33 @@ HTML:Hyper Text Markup Language(超文本标记语言)
      border-radius:10px;//或者border-radius:10%;
       //使整个框变圆的border-radius:50px或者50%;
    }
-   
-  
- 
-   
 
+a元素
+  anchor又叫锚点，用于链接外部地址实现页面跳转
+  或者链接到当前页面某部分实现内部导航
+  <p>Here's a
+   <a href="http://freecodecamp.cn">
+   link to FreeCodeCamp中文社区 </a> 
+  for you to follow.</p>   //嵌套：将一个元素放入另一个元素
   
-  
+  固定链接
+    还不知道链接到哪时可以将href属性的值替换为#（哈希符号）
+    <a href="#">
+      <img class="smaller-image thick-green-border" src="/images/relaxing-cat.jpg">
+    </a>    //将图片嵌套进a元素
+   
+alt属性(alt text)
+  当图片无法加载时显示的替代文本,搜索引擎也会搜索alt属性
+  <img src="www.your-image-source.com/your-image.jpg" alt="your alt text">
+
+带项目符号的列表（无序列表unordered lists）
+  <ul>
+    <li>milk</li>
+    <li>cheese</li>
+  </ul>
+ 
+数字编号列表（有序列表ordered lists）
+  <ol>
+    <li>Garfield</li>
+    <li>Sylvester</li>
+  </ol>
