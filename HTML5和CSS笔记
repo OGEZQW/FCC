@@ -48,25 +48,7 @@ HTML:Hyper Text Markup Language(超文本标记语言)
   当某种字体不可用可自动降级成另一种字体
   p{font-family:helvetica,sans-serif}
   
-添加图片
-  使用img元素为网站添加图片使用src属性指向一个图片的具体地址
-  <img src="https://www.your-image-source.com/your-image.jpg">
-  不需要结束标记
-
-指定图片宽度
-  <style>
-    .large-image{ width:500px;}
-  </style>
-  <img src="/images/relaxing-cat.jpg" class="smaller-image">
-
-指定边框属性（style,color,width,height）
-  <style>
-   .thin-red-border {
-     border-color: red;
-     border-width: 5px;
-     border-style: solid;
-   }
-  </style>
+添 /style>
   <img class="smaller-image thin-red-border"
    src="/images/relaxing-cat.jpg">
  
@@ -117,4 +99,140 @@ alt属性(alt text)
    
  占位符（placeholder text）:输入框在输入前置于框中的预定义文本
    <input type="text" placeholder="this is placeholder text">
+  
+ 与互联网交互的web表单(form)
+   action属性：指定了表单提交到服务器的地址
+   <form action="/submit-cat-photo">
+     <input type="text" placeholder="cat photo URL">
+   </form> 
    
+   提交按钮 
+     点击这个按钮，表单中的数据将会被发送到你通过action属性指定的地址上。
+     <button type="submit">按钮文本</button>
+ 
+ 必填项（required）
+   不填写输入框就无法提交表单
+   <input type="text" required>
+ 
+ 单选按钮（radio button）
+   是input输入框的一种类型，适用于多选一
+   每个单选按钮都要嵌套在它自己的label标签中
+   所有关联的单选按钮应该使用相同的name属性
+   <label><input type="radio"name="indoor-outdoor">Indoor</label>
+   <label><input type="radio"name="indoor-outdoor">Outdoor</label>
+ 
+ 多选按钮（check boxes）
+   复选按钮是input的输入框的另一种类型。
+   每一个复选按钮都应该嵌套进label元素中。   
+   所有关联的复选按钮应该具有相同的name属性。
+   <label><input type="checkbox" name=personality>gaga </label>
+   <label><input type="checkbox" name=personality>miao</label>
+   <label><input type="checkbox" name=personality>giao</label>
+ 
+ checked属性
+   在input元素中设置默认选中
+   <input type="radio" name="test-name" checked>
+  
+ div元素
+   也被称作division(层)元素，是一个盛装其他元素的通用容器。
+   src="/images/relaxing-cat.jpg"></a>
+   <div>
+   <p>Things cats love:</p>
+   <ul>
+     <li>cat nip</li>
+     <li>laser pointers</li>
+     <li>lasagna</li>
+   </ul>
+   <p>Top 3 things cats hate:</p>
+   <ol>
+     <li>flea treatment</li>
+     <li>thunder</li>
+     <li>other cats</li>
+   </ol>
+   </div>
+   
+ 设置一个元素的背景色
+   使用backgroud-color属性来设置元素的背景色
+   .green-background{
+   background-color:green;
+   }
+   <div class="gray-background">
+    ...
+   </div>
+     
+ id属性
+   除了 class属性之外，每一个 HTML 元素还可以使用 id 属性。 
+   唯一
+   <h2 id="cat-photo-app">
+   
+   使用id选择器声明样式
+     声明一个叫cat-photo-element的ID选择器 ，并设置背景色为绿色。
+       #cat-photo-form {
+         background-color: green;
+       }
+       <form id="cat-photo-form">
+       ...
+       </form>
+     注意：在你的 style 元素内部，定义类选择器必须添加 . 为前缀，
+     定义ID选择器必须添加 # 为前缀。
+     
+ 三个HTML元素布局的重要属性：
+   padding（内边距），margin（外边距），border（边框）
+   元素的 padding 控制元素内容 content和元素边框 border 之间的距离。
+     .red-box {
+       background-color: red;
+       padding: 20px;
+     }
+     <h5 class="box red-box">文本</h5>
+   
+   元素的外边距 margin 控制元素边框 border 和元素实际所占空间的距离。
+     .green-box {
+       background-color: green;
+       padding: 20px;
+       margin: 20px;
+     }
+   如果你将一个元素的 margin 设置为负值，元素将会变大
+   
+   自定义元素，每一个边具有不同的 padding。
+   CSS 允许使用 padding-top、padding-right、padding-bottom 和 padding-left来控制元素上右下左四个方向的 padding。
+     .green-box {
+       background-color: green;
+       padding-top:40px;
+       padding-right:20px;
+       padding-bottom:20px;
+       padding-left:40px;
+     }
+ 
+   自定义元素，使每一个边具有不同的 margin。
+   CSS 允许使用 margin-top、margin-right、margin-bottom 和 margin-left 来控制元素上右下左四个方向的 margin。
+     .green-box {
+       background-color: green;
+       margin-top: 40px;
+       margin-right: 20px;
+       margin-bottom: 20px;
+       margin-left: 40px;
+     }
+   
+   集中起来指定元素的 padding-top、padding-right、padding-bottom 和 padding-left 属性
+     padding：10px 20px 10px 20px;
+     排序：上右下左。
+   
+   集中起来指定元素的 margin-top、margin-right、margin-bottom 和 margin-left 属性
+     margin: 10px 20px 10px 20px;
+     排序：上右下左。
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
