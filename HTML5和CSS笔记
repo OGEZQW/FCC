@@ -221,14 +221,42 @@ alt属性(alt text)
      margin: 10px 20px 10px 20px;
      排序：上右下左。
  
- 
- 
- 
- 
- 
- 
- 
- 
+ body元素
+   body {background-color: black；}
+   所有其他元素将自动继承body元素的样式
+   
+   关于样式冲突
+   <style>
+     body {color: green;}
+     .pink-text{color:pink;}
+     .blue-text{color:blue;}
+   </style>
+   <h1 class="pink-text blue-text">Hello World!</h1>
+   在 HTML 中这些 class 如何排序是无所谓的,如上
+   然而，在 <style> 部分中 class 声明的顺序却非常重要
+   第二个声明总是比第一个具有优先权
+   因为 .blue-text 是第二个声明，它覆盖了 .pink-text 属性和body元素的样式。
+   
+   另外，id属性具有更高的优先级
+   #orange-text{
+     color:orange;
+   }
+   <h1 class="pink-text blue-text" id="orange-text">Hello World!</h1>
+   在上面那段代码里增改这段代码,颜色会变成橙色
+   
+   内联样式优先级比id更高,优先级最高是使用!important(注意不是！）
+   .pink-text {
+    color: pink !important;
+   }
+   优先级排列：!important>内联样式>id属性
+      >后声明class样式>先声明class样式>自动继承的body样式
+      
+使用十六进制表示颜色
+  在 CSS 中，我们可以使用 6 位十六进制数字来表示颜色，
+  每 2 位分别表示红色 (R)、绿色 (G) 和蓝色 (B) 成分
+  0 是 hex code（十六进制编码）中最小的一个，它代表颜色的完全缺失。
+  F 是 hex code（十六进制编码）中最大的一个，它代表最大可能的亮度。
+  如#000000 是黑色，#FFFFFF是白色
  
  
  
