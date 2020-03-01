@@ -1,1 +1,79 @@
+响应式设计
+  Bootstrap将会根据你的屏幕的大小来调整HTML元素的大小,
+  通过响应式设计，你无需再为你的网站设计一个手机版,
+  它在任何尺寸的屏幕上看起来都会不错。
+  
+  添加下列代码到你的HTML开头来将Bootstrap添加到任意应用中：
+    <link rel="stylesheet" 
+    href="//cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+  
+  将所有HTML内容放在class为container-fluid的div中
+  
+  添加图片增加一个img-responsive的class属性使图片的宽度适配页面的宽度。
+    <img class="img-responsive" src="/images/running-cat.jpg">
+  
+  通过text-center class属性将头部元素居中
+    <h2 class="red-text text-center">your text</h2>
+   
+  通过给按钮添加 btn class 属性使用bootstrap风格的按钮
+    <button class="btn">Like</button>
+  
+  通过给按钮添加btn-block class属性使其成为块级元素
+    通常情况下，你的 button 元素仅与它所包含的文本一样宽。
+    通过使其成为块级元素，你的按钮将会伸展并填满页面整个水平空间，
+    任何在它之下的元素都会跟着浮动至该区块的下一行。
+    <button class="btn-block btn">Like</button>
+  
+  Bootstrap自带了一些预定义的按钮颜色
+    深蓝色btn-primary是主要颜色，主要用在用户主要采取的操作上
+      <button class="btn btn-block btn-primary">Like</button>
+    
+    浅蓝色 btn-info 被用在那些用户可能会采取的操作上。
+      <button class="btn btn-block btn-info">Info</button>
+      
+    红色btn-danger被用来提醒用户该操作具有“破坏性”
+      例如删除一张猫的图片。
+      <button class="btn btn-block btn-danger">Delete</button>
+    
+    Bootstrap 使用一种响应式网格布局—
+    可轻松实现将多个元素放入一行并指定各个元素的相对宽度的需求
+      class属性 col-md-* ，md 表示 medium (中等的)，* 代表一个数字，它指定了这个元素所占的列宽。
+        在中等大小的屏幕上比如笔记本电脑
+      class属性 col-xs-* ， xs 是 extra small 缩写，* 是你需要填写的数字，代表在一行中,各个元素应该占的列宽。
+         应用于较小的屏幕上比如手机屏幕  
+      
+      所有按钮嵌入在同一个 div 元素中， 并且该元素包含 class row 属性。
+      每一个 Bootstrap 按钮再各自嵌入自己的 div 元素中，并且该元素包含 class col-xs-4 属性。
+      例：文字与图片排在一行
+      <div class="row">
+      <div class="col-xs-8"><h2 class="text-primary text-center">CatPhotoApp</h2></div>
+      <div class="col-xs-4"><a href="#"><img class="img-responsive thick-green-border" src="/images/relaxing-cat.jpg"></a></div>
+      </div>
+    
+    使用 span 元素将可以把几个元素放在一起
+    或者用此为一个元素的不同部分指定样式
+      <p>Top 3 things cats <span class = "text-danger">hate:</span></p>
+    
+    Font Awesome是一个很方便的图标库
+      在头部添加<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
+      一般页面都已事先添加
+      <button class="btn btn-block btn-info">
+      <i class="fa fa-info-circle"></i>Info</button>
+      
+    将 Bootstrap 的 col-xs-*用在 form 元素中使单选按钮均匀在页面上展开
+     <div class="row">
+      <div class="col-xs-6"><label><input type="radio" name="indoor-outdoor"> Indoor</label></div>
+      <div class="col-xs-6"> <label><input type="radio" name="indoor-outdoor"> Outdoor</label></div>
+    </div>
+    复选同理
+    
+  
+  
+    
+  
+  
+  
+  
 
+
+  
