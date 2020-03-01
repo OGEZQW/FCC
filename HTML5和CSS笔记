@@ -48,10 +48,31 @@ HTML:Hyper Text Markup Language(超文本标记语言)
   当某种字体不可用可自动降级成另一种字体
   p{font-family:helvetica,sans-serif}
   
-添 /style>
+添加图片
+  使用img元素添加图片，使用src属性指向一个图片的具体地址
+  <img src="https://www.your-image-source.com/your-image.jpg">
+  注意：img是自关闭元素，不需要结束标记
+  
+指定图片宽度
+  CSS包含一个控制元素宽度的width属性。像控制字体一样，我们使用px（像素）来指定图片的宽度。
+  <style>
+    .smaller-image{width:100px;}
+  </style>
+  <img src="/images/relaxing-cat.jpg" class="smaller-image">
+
+设置边框
+  CSS 边框的属性有style(样式)、color(颜色)、width(宽度)、height(高度)等。
+  <style>
+  .thin-red-border {
+    border-color: red;
+    border-width: 5px;
+    border-style: solid;
+  }
+  </style>
   <img class="smaller-image thin-red-border"
-   src="/images/relaxing-cat.jpg">
- 
+   src="/images/relaxing-cat.jpg"> 
+     //可以应用多个class到一个元素，用空格隔开
+
 边框变圆
    通过CSS的一个叫border-radius(边框半径)的属性来让它的边框变成圆的。
    .thick-green-border {
