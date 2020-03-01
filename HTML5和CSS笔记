@@ -156,7 +156,6 @@ alt属性(alt text)
   
  div元素
    也被称作division(层)元素，是一个盛装其他元素的通用容器。
-   src="/images/relaxing-cat.jpg"></a>
    <div>
    <p>Things cats love:</p>
    <ul>
