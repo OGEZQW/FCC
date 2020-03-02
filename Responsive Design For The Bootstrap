@@ -35,38 +35,40 @@
       例如删除一张猫的图片。
       <button class="btn btn-block btn-danger">Delete</button>
     
-    Bootstrap 使用一种响应式网格布局—
-    可轻松实现将多个元素放入一行并指定各个元素的相对宽度的需求
-      class属性 col-md-* ，md 表示 medium (中等的)，* 代表一个数字，它指定了这个元素所占的列宽。
-        在中等大小的屏幕上比如笔记本电脑
-      class属性 col-xs-* ， xs 是 extra small 缩写，* 是你需要填写的数字，代表在一行中,各个元素应该占的列宽。
-         应用于较小的屏幕上比如手机屏幕  
+  Bootstrap 使用一种响应式网格布局—
+  可轻松实现将多个元素放入一行并指定各个元素的相对宽度的需求
+    class属性 col-md-* ，md 表示 medium (中等的)，* 代表一个数字，它指定了这个元素所占的列宽。
+      在中等大小的屏幕上比如笔记本电脑
+    class属性 col-xs-* ， xs 是 extra small 缩写，* 是你需要填写的数字，代表在一行中,各个元素应该占的列宽。
+      应用于较小的屏幕上比如手机屏幕  
       
-      所有按钮嵌入在同一个 div 元素中， 并且该元素包含 class row 属性。
-      每一个 Bootstrap 按钮再各自嵌入自己的 div 元素中，并且该元素包含 class col-xs-4 属性。
-      例：文字与图片排在一行
-      <div class="row">
-      <div class="col-xs-8"><h2 class="text-primary text-center">CatPhotoApp</h2></div>
-      <div class="col-xs-4"><a href="#"><img class="img-responsive thick-green-border" src="/images/relaxing-cat.jpg"></a></div>
-      </div>
+  所有按钮嵌入在同一个 div 元素中， 并且该元素包含 class row 属性。
+  每一个 Bootstrap 按钮再各自嵌入自己的 div 元素中，并且该元素包含 class col-xs-4 属性。
+  例：文字与图片排在一行
+  <div class="row">
+    <div class="col-xs-8"><h2 class="text-primary text-center">CatPhotoApp</h2></div>
+    <div class="col-xs-4"><a href="#"><img class="img-responsive thick-green-border" src="/images/relaxing-cat.jpg"></a></div>
+  </div>
     
-    使用 span 元素将可以把几个元素放在一起
-    或者用此为一个元素的不同部分指定样式
-      <p>Top 3 things cats <span class = "text-danger">hate:</span></p>
+  使用 span 元素将可以把几个元素放在一起或者用此为一个元素的不同部分指定样式
+  <p>Top 3 things cats <span class = "text-danger">hate:</span></p>
     
-    Font Awesome是一个很方便的图标库
-      在头部添加<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
-      一般页面都已事先添加
-      <button class="btn btn-block btn-info">
-      <i class="fa fa-info-circle"></i>Info</button>
+  Font Awesome是一个很方便的图标库
+  在头部添加<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
+  (一般页面都已事先添加)
+  <button class="btn btn-block btn-info">
+  <i class="fa fa-info-circle"></i>Info</button>
       
-    将 Bootstrap 的 col-xs-*用在 form 元素中使单选按钮均匀在页面上展开
-     <div class="row">
-      <div class="col-xs-6"><label><input type="radio" name="indoor-outdoor"> Indoor</label></div>
-      <div class="col-xs-6"> <label><input type="radio" name="indoor-outdoor"> Outdoor</label></div>
-    </div>
-    复选同理
+  将 Bootstrap 的 col-xs-*用在 form 元素中使单选按钮均匀在页面上展开
+  <div class="row">
+    <div class="col-xs-6"><label><input type="radio" name="indoor-outdoor"> Indoor</label></div>
+    <div class="col-xs-6"> <label><input type="radio" name="indoor-outdoor"> Outdoor</label></div>
+  </div>
+  复选同理
+  
+  well class属性：为设定的列创造出一种视觉上的深度感
     
+  target class属性：方便选用
   
   
     
